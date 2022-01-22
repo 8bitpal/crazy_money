@@ -16,7 +16,7 @@ class CrazyMoney
   end
 
   def initialize(amount)
-    @amount = BigDecimal.new(amount.to_s)
+    @amount = BigDecimal(amount.to_s)
   end
 
   def to_s(decimal_places: 2)
